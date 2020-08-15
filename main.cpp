@@ -4,9 +4,11 @@
 
 void display();
 
+void reshape(int,int);
+
 void init()
 {
-    glClearColor(1.0,1.0,0.0,1.0);
+    glClearColor(0.0,0.0,0.0,1.0);
 }
 
 int main(int argc, char **argv)
@@ -20,6 +22,7 @@ int main(int argc, char **argv)
     glutCreateWindow("Window 1");
 
     glutDisplayFunc(display);
+    glutReshapeFunc(reshape);
     init();
 
     glutMainLoop();
@@ -33,5 +36,28 @@ void display()
 
     //Draw
 
+    glPointSize(10.0);
+
+    glBegin(GL_POLYGON);
+
+    glVertex2d(5,5);
+    glVertex2d(1,1);
+    glVertex2d(8,3);
+
+
+
+    glEnd();
+
     glFlush();
+}
+
+void reshape(int w, int h)
+{
+    glViewport(0,0,(GLsizei)w,(GLsizei)h);
+    glMatrixMode(GL_PROJECTION);
+    glLoadIdentity();
+    gluOrtho2D(-10,10,-10,10);
+    glMatrixMode(GL_MODELVIEW);
+
+
 }
