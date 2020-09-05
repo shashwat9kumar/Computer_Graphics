@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1597376003 source:d:\code blocks folder\demoopengl\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	<GL/glut.h>
+

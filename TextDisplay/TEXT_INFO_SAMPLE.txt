@@ -1,0 +1,51 @@
+#include<windows.h>
+#define GLUT_DISABLE_ATEXIT_HACK;
+#include<gl/glut.h>
+ 
+void init(){
+ glClearColor(1,1,1,0);
+ glMatrixMode(GL_PROJECTION);
+ glOrtho(0,40,0,40,0,20);
+}
+void display(){
+ glClear(GL_COLOR_BUFFER_BIT);
+ glColor3f(0.0,1.0,0.0);
+ glRasterPos2i(20,10);
+ glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'E');
+ glColor3f(1.0,1.0,0.0);
+ glRasterPos2i(21,10);
+ glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'T');
+ glColor3f(1.0,0.0,0.0);
+ glRasterPos2i(22,10);
+ glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'H');
+ glColor3f(0.0,1.0,0.0);
+ glRasterPos2i(23,10);
+ glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'I');
+ glColor3f(1.0,1.0,0.0);
+ glRasterPos2i(24,10);
+ glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'O');
+ glRasterPos2i(25,10);
+ glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'P');
+ glRasterPos2i(26,10);
+ glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'I');
+ glRasterPos2i(27,10);
+ glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,'A');
+ glLineWidth(15);
+ glColor3f(1.0,0.0,0.0);
+ glBegin(GL_LINES);
+  
+    glVertex2i(20,9);
+    glVertex2i(30,9);
+    glEnd();
+   glFlush();
+}
+int main(int argc,char **argv){
+ glutInit(&argc,argv);
+ glutInitDisplayMode(GLUT_RGB|GLUT_SINGLE);
+ glutInitWindowSize(500,200);
+ glutInitWindowPosition(10,10);
+ glutCreateWindow("simple text drawing");
+ init();
+ glutDisplayFunc(display);
+ glutMainLoop();
+}
