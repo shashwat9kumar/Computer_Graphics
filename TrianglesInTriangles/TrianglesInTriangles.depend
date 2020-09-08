@@ -338,3 +338,7 @@
 1512590989 c:\mingw\include\math.h
 	<_mingw.h>
 
+1598427883 source:d:\code blocks folder\cg\trianglesintriangles\main.cpp
+	<gl/glut.h>
+	<math.h>
+

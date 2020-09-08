@@ -23,7 +23,7 @@ void display(){
 
      glBegin(GL_POINTS);
 
-     glColor3f(1.0,1.0,1.0);b
+     glColor3f(1.0,1.0,1.0);
      glVertex2f(x1,y1);
 
      while(x1<=x2 && y1<=y2)

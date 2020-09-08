@@ -338,3 +338,7 @@
 1512590989 c:\mingw\include\math.h
 	<_mingw.h>
 
+1599031605 source:d:\code blocks folder\cg\bresenham_circle_drawing\main.cpp
+	<gl/glut.h>
+	<math.h>
+
