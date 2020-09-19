@@ -335,3 +335,7 @@
 	<stddef.h>
 	<GL/gl.h>
 
+1599031149 source:d:\code blocks folder\cg\circle\main.cpp
+	<gl/glut.h>
+	<cmath>
+

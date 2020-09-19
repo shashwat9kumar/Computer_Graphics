@@ -1,8 +1,6 @@
 # depslib dependency file v1.0
-1597665071 source:d:\code blocks folder\demoglut\main.cpp
-	<GL/gl.h>
-	<GL/glu.h>
-	<GL/glut.h>
+1597818729 source:d:\code blocks folder\mydemoworks\main.cpp
+	<gl/glut.h>
 
 1597322613 c:\mingw\include\gl\glut.h
 	"freeglut_std.h"
@@ -335,9 +333,4 @@
 1512591001 c:\mingw\include\gl\glu.h
 	<stddef.h>
 	<GL/gl.h>
-
-1598242406 source:d:\code blocks folder\cg\demoglut\main.cpp
-	<GL/gl.h>
-	<GL/glu.h>
-	<GL/glut.h>
 
